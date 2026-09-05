@@ -1,0 +1,63 @@
+FIFA World Cup 2026 Data Science Project
+
+Assessment:
+Assessment 2 – Group Project Presentation
+
+Objective:
+Objective 1
+
+Group size:
+3 students
+
+Project started:
+3 September 2026
+
+Approved data sources:
+1. FIFA
+2. FBref
+3. The Stats Don't Lie
+
+Current Progress:
+- Assessment instructions reviewed
+- Project brief reviewed
+- Assessment rubric reviewed
+- Project folder structure created
+- Jupyter Notebook environment prepared
+- Task 1 notebook created
+
+Task 1 Completed – Player Shooting Efficiency
+
+Analytic question:
+Do forwards and midfielders differ significantly in their average shooting accuracy during the FIFA World Cup 2026?
+
+Data source:
+FBref – FIFA World Cup 2026 Player Shooting Statistics
+
+Data preparation:
+- Retained players classified specifically as FW or MF
+- Excluded players with zero shots
+- Applied a minimum threshold of 3 shots
+- Created Shooting_Accuracy from shots on target and total shots
+- Checked missing values and duplicate records
+
+Eligible population:
+242 players
+- 81 forwards
+- 161 midfielders
+
+Sampling:
+Stratified random sample of 50 forwards and 50 midfielders
+
+Key results:
+- Forward mean shooting accuracy: 40.60%
+- Midfielder mean shooting accuracy: 32.89%
+- Forward 95% CI: 33.83%–47.36%
+- Midfielder 95% CI: 26.29%–39.49%
+- t-statistic: 1.639
+- p-value: 0.104
+
+Conclusion:
+Forwards had a higher mean shooting accuracy in the sample, but the difference was not statistically significant at the 5% level.
+
+Task status:
+Completed
