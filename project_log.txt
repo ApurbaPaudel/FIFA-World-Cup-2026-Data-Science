@@ -61,3 +61,33 @@ Forwards had a higher mean shooting accuracy in the sample, but the difference w
 
 Task status:
 Completed
+
+
+
+## Analytic Task 3 – Team Possession and Interceptions
+
+**Analytic question:**  
+Do teams with below-median possession and teams with above-median possession differ significantly in their mean interceptions per 90 minutes at the FIFA World Cup 2026?
+
+**Data sources:**  
+FBref 2026 World Cup Squad Possession Statistics and Squad Miscellaneous Statistics.
+
+**Data preparation:**  
+- Joined the two datasets using `Squad`.
+- Confirmed all 48 teams matched.
+- Confirmed `90s` values agreed between both datasets.
+- Created `Interceptions_per_90 = Int / 90s`.
+- Median possession was 49.8%.
+- Excluded two teams exactly equal to the median.
+- No missing values were found.
+- Randomly sampled 20 below-median and 20 above-median teams using `random_state=42`.
+
+**Results:**  
+- Above-median mean: 7.68 interceptions per 90.
+- Below-median mean: 8.85 interceptions per 90.
+- t-statistic = 1.906.
+- p-value = 0.0649.
+- At α = 0.05, the null hypothesis was not rejected.
+
+**Conclusion:**  
+Below-median possession teams had a higher sample mean, but there was insufficient statistical evidence to conclude that the population means differed significantly.
